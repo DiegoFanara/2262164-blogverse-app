@@ -19,7 +19,7 @@ services:
       retries: 5
 
   backend:
-    image: diegofanara/2262164-blogverse-backend:${BACKEND_VERSION:-latest}
+    image: diegofanara/tp2-2262164-blogverse-backend:${BACKEND_VERSION:-latest}
     build:
       context: ./2262164-blogverse-backend
       dockerfile: Dockerfile
@@ -42,7 +42,7 @@ services:
         condition: service_healthy
 
   frontend:
-    image: diegofanara/2262164-blogverse-frontend:${FRONTEND_VERSION:-latest}
+    image: diegofanara/tp2-2262164-blogverse-frontend:${FRONTEND_VERSION:-latest}
     build:
       context: ./2262164-blogverse-frontend
       dockerfile: Dockerfile
